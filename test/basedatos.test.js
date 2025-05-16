@@ -1,15 +1,8 @@
 // test/db.test.js
-import('chai').then(chaiModule => {
-  chai = chaiModule;
-  // Aquí puedes continuar con tus pruebas
-  runTests();
-}).catch(err => {
-  console.error("Error al cargar chai:", err);
-});
-
+const chai = require('chai');
 const connection = require('../src/conexion');
 
-const expect = chai.expect;
+const { expect } = chai;
 
 describe('MySQL Connection', () => {
   it('debería conectarse y ejecutar una consulta simple', (done) => {
