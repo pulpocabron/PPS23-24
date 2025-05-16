@@ -1,8 +1,7 @@
 // test/db.test.js
-const chai = require('chai');
+const { expect } = await import('chai');
 const connection = require('../src/conexion');
 
-const { expect } = chai;
 
 describe('MySQL Connection', () => {
   it('debería conectarse y ejecutar una consulta simple', (done) => {
