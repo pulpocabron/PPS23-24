@@ -1,10 +1,18 @@
 //test de prueba para detectar que exista archivo de logo
 // test/logo.test.js
-const chai = require('chai');
 const fs = require('fs');
 const path = require('path');
 
-const { expect } = chai;
+import('chai').then(chaiModule => {
+  chai = chaiModule;
+  // Aquí puedes continuar con tus pruebas
+  runTests();
+}).catch(err => {
+  console.error("Error al cargar chai:", err);
+});
+
+
+const expect = chai.expect;
 
 describe('Logo test', () => {
   it('debería devolver el logo en /assets/images/logo.png', () => {
