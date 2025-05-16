@@ -1,6 +1,6 @@
 // test/db.test.js
 const chai = require('chai');
-const connection = require('../src/conexiondb');
+const connection = require('../src/conexion');
 
 const { expect } = chai;
 
