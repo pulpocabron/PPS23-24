@@ -9,9 +9,17 @@ const connection = mysql.createConnection({
     database: process.env.DB_NAME,
 });
 
+/*const connection = mysql.createConnection({
+    host: 'credencialesenwebderailway',
+    port: credencialesenwebderailway,
+    user: 'root',
+    password: 'credencialesenwebderailway',
+    database: 'red_social',
+});*/
+
 connection.connect((err) => {
     if (err) throw err;
-    console.log('Connected to MySQL database' + process.env.DB_HOST);
+    console.log('Connected to MySQL database');
 });
 
 

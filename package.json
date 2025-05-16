@@ -3,17 +3,20 @@
   "version": "4.0.1",
   "description": "Red Social",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
+    "build": "test",
     "start": "node ./src/server.js"
-  },  
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
+    "chai": "^5.2.0",
     "crypto": "^1.0.1",
     "ejs": "^3.1.9",
     "express": "^4.21.2",
     "express-fileupload": "^1.5.1",
     "express-session": "^1.18.0",
+    "mocha": "^11.3.0",
     "multer": "^1.4.5-lts.1",
     "mysql": "^2.18.1",
     "mysql2": "^3.9.2",
