@@ -3,7 +3,7 @@
   "version": "4.0.1",
   "description": "Red Social",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --exit",
     "build": "npm run test",
     "start": "node ./src/server.js"
   },
